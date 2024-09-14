@@ -3,22 +3,27 @@
 <head>
  <title>Document</title>
  <style>
-    #div1{
-height: 100px;
-width: 100px;
-background-color: darkturquoise;
-transform: skewX(30deg);
-    }
-    #div2{
-height: 100px;
-width: 100px;
-background-color: darkturquoise;
-transform: skewy(30deg);
-    }
+   
+    .anim{
+         height: 200px;
+    width: 200px;
+    background-color: blanchedalmond;
+    animation-name: example;
+   animation-duration: 5s; 
+    position: sticky;
+    } 
+   
+@keyframes example{
+  0%{background-color: blanchedalmond;top:0px;}
+     50%{background-color: indianred;top:100px}
+     100%{background-color: blanchedalmond;top: 0px;}
+}
  </style>
 </head>
 <body>
-    <div id="div1"><div id="div2"></div></div>
-    
+    <div class="anim">
+        
+    </div>
+  
 </body>
 </html>
